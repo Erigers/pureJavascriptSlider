@@ -31,9 +31,7 @@
 
   // Listen for the event.
   document.addEventListener('slidesRetrieved', (e) => {
-    console.log(e);
     const parent = document.getElementsByClassName('slider')[0];
-    console.log(parent);
     for (let i = 0; i < 6; i += 1) {
       const slide = document.createElement('li');
       slide.id = `slide-${i+1}`;
