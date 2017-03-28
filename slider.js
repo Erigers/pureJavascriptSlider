@@ -32,8 +32,22 @@
   // Listen for the event.
   document.addEventListener('slidesRetrieved', (e) => {
     console.log(e);
+    const parent = document.getElementsByClassName('slider')[0];
+    console.log(parent);
     for (let i = 0; i < 6; i += 1) {
-      console.log(`${e.slides[i].id} - ${e.slides[i].title}`);
+      const slide = document.createElement('li');
+      slide.id = `slide-${i+1}`;
+      parent.appendChild(slide);
+
+      const newParent = slide;
+
+      const h1 = document.createElement('h1');
+      h1.innerHTML = e.slides[i].title;
+      newParent.appendChild(h1);
+
+      const img = document.createElement('img');
+      img.src = e.slides[i].url;
+      newParent.appendChild(img);
     }
   }, false);
 
