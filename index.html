@@ -1,17 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GYSI</title>
+    <title>Slider</title>
+    <link rel = "stylesheet" type = "text/css" href = "css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello Slider</h1>
-    <ul class="slider">
+    <div class="slider-con">
 
-    </ul>
-<script type="text/javascript" src="slider.js"></script>
+        <a href="#" id="next" class="btn_next"><svg id=nextSVG style="enable-background:new -3513 467.7 59.4 59.4" version=1.1 viewBox="-3513 467.7 59.4 59.4"x=0px xml:space=preserve xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink y=0px><polygon class=st0 points="-3497.4,527.1 -3498.9,525.7 -3470.6,497.4 -3498.9,469.1 -3497.4,467.7 -3467.7,497.4 "/></svg></a>
+        <a href="#" id="prev" class="btn_prev"><svg id=prevSVG style="enable-background:new -3513 467.7 59.4 59.4" version=1.1 viewBox="-3513 467.7 59.4 59.4"x=0px xml:space=preserve xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink y=0px><polygon class=st0 points="-3498.9,497.4 -3469.1,467.7 -3467.7,469.1 -3496,497.4 -3467.7,525.7 -3469.1,527.1 "/></svg></a>
+
+        <ul id="slides" class="slider">
+
+        </ul>
+        <div id="thumbs">
+        </div>
+    </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
